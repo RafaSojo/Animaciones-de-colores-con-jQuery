@@ -22,6 +22,16 @@
                     "border-color": "red"
                 }, 1000);
         });
+        $("#jQueryUI").click(()=>{
+            location.href="indexjQueryUI.html";
+        })
+        $("#jQueryColor").click(()=>{
+            location.href="indexjQueryColor.html";
+            
+        })
+        $("#inicio").click(()=>{
+            location.href="index.html";
+        })
     }
 
 }

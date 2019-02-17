@@ -8,8 +8,6 @@
     <meta name="author" content="Marcos Gallardo Pérez y Rafael Sojo Ruiz">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
-    <script src="js/jquery-ui.js"></script>
-    <script src="js/jquery.color.js"></script>
     <script src="js/main.js"></script>
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
@@ -47,9 +45,47 @@
                     </div>
                 </div>
                 <div class="contenedorEjemplos">
-                    <div id="ejemplo1"><span>Ejemplo1</span></div>
+                    <div id="ejemplo1"><span>Clickeame</span></div>
+                </div>
+                Lo que hemos hecho es aplicarle a la caja central el método .animate() que viene por defecto con
+                jQuery.
+                Exactamente hemos usado :
+                <div id="verCodigo">
+                    <ul>$("cajaCentral").animate({
+                        <li>"width": "300px",</li>
+                        <li> "background-color": "red",</li>
+                        <li> "color": "black",</li>
+                        <li> "border-color": "black"</li>
+                        <li> }, 1000);</li>
+                    </ul>
                 </div>
             </p>
+            Pero, como vemos, solo se aplica el cambio de tamaño, no el de los colores. Si vamos a la <a href="http://api.jquery.com/animate/">
+                documentación oficial</a>,
+            podemos ver que justo debajo de <i>"Animation Properties and Values"</i> hay un parrafo que nos habla sobre
+            esto: <br>
+            <i>"All animated properties should be animated to a single numeric value, except as noted below; most
+                properties that are non-numeric cannot be animated using basic jQuery functionality (For example,
+                width, height, or left can be animated <b>but background-color cannot be, unless the jQuery.Color
+                    plugin</b>
+                is used). Property values are treated as a number of pixels unless otherwise specified. The units em
+                and % can be specified where applicable."</i>
+            <br>Que traducido:<br>
+            <i>Todas las propiedades animadas deben animarse a un solo valor numérico, excepto como se indica a
+                continuación; la mayoría de las propiedades que no son numéricas no se pueden animar con la
+                funcionalidad básica de jQuery (por ejemplo, el ancho, la altura o la izquierda se pueden animar pero
+                el <b>color de fondo no puede ser, a menos que se use el complemento jQuery.Color</b>). Los valores de
+                propiedad se tratan como un número de píxeles a menos que se especifique lo contrario. Las unidades em
+                y% pueden especificarse donde corresponda.</i>
+            <br>
+            A parte del Jquery Color podemos usar el jquery UI. En los siguientes botones, os dejo como sería con
+            jQuery UI y con
+            jQuery color.
+            <div id="botones">
+                <input type="button" value="jQueryUI" id="jQueryUI">
+                <input type="button" value="jQueryColor" id="jQueryColor">
+            </div>
+
         </article>
         <noscript>Para el correcto funcionamiento de la página es necesario tener activado Javascript.</noscript>
     </main>
