@@ -32,6 +32,8 @@
         $("#inicio").click(()=>{
             location.href="index.html";
         })
+        console.log($.Color( $("#ejemplo1"), "background-color" ));
+        console.log($.Color( $("#ejemplo1"), "color" ));
     }
 
 }
