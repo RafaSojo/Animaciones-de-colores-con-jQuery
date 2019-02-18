@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Marcos Gallardo Pérez y Rafael Sojo Ruiz">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <title>Animaciones con Color</title>
+</head>
+
+<body>
+    <main>
+        <h1>Rafael Sojo Ruiz y Marcos Gallardo Pérez</h1>
+        <article>
+            <p>En este documento, tenemos el plugin jquery.UI. Vemos lo que ocurre al animar estados de colores:
+                <div class="estados">
+                    <div>
+                        <h4>Estado Inicial</h4>
+                        <ul>
+                            <li>width: 150px;</li>
+                            <li>background: black;</li>
+                            <li>color: white;</li>
+                            <li>border: 3px solid red;</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Estado Final</h4>
+                        <ul>
+                            <li>width: 300px;</li>
+                            <li>background: red;</li>
+                            <li>color: black;</li>
+                            <li>border-color: black;</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contenedorEjemplos">
+                    <div id="ejemplo1"><span>Clickeame</span></div>
+                </div>
+                Lo que hemos hecho es aplicarle a la caja central el método .animate() que viene por defecto con
+                jQuery.
+                Exactamente hemos usado :
+                <div id="verCodigo">
+                    <ul>$("cajaCentral").animate({
+                        <li>"width": "300px",</li>
+                        <li> "background-color": "red",</li>
+                        <li> "color": "black",</li>
+                        <li> "border-color": "black"</li>
+                        <li> }, 1000);</li>
+                    </ul>
+                </div>
+                Con la misma sintaxis, jqueryUI nos anima los colores.
+            </p>
+
+            <div id="botones">
+                <input type="button" value="Inicio" id="inicio">
+                <input type="button" value="jQueryColor" id="jQueryColor">
+            </div>
+
+        </article>
+        <noscript>Para el correcto funcionamiento de la página es necesario tener activado Javascript.</noscript>
+    </main>
+
+</body>
+
+</html>

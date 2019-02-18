@@ -22,6 +22,18 @@
                     "border-color": "red"
                 }, 1000);
         });
+        $("#jQueryUI").click(()=>{
+            location.href="indexjQueryUI.html";
+        })
+        $("#jQueryColor").click(()=>{
+            location.href="indexjQueryColor.html";
+            
+        })
+        $("#inicio").click(()=>{
+            location.href="index.html";
+        })
+        console.log($.Color( $("#ejemplo1"), "background-color" ));
+        console.log($.Color( $("#ejemplo1"), "color" ));
     }
 
 }
